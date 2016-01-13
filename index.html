@@ -1,0 +1,26 @@
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="videos"></div>
+
+    <script>
+      var youtube_playlist_setup = {
+        'destination': '.videos',
+        'api_key': 'AIzaSyB-maeYxfWggeDNhB2ITl1MNwe83DXoiyg',
+        'playlist_id': 'PLuaHjDSdEYOXJucjWls_-CF-a2nbGXrbo'
+      };
+
+      $.getScript('js/youtube_playlist.min.js', function(){
+        youtube_playlist.app();
+      });
+    </script>
+
+
+  </body>
+</html>
